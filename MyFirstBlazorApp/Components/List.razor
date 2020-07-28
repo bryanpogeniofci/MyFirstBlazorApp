@@ -10,6 +10,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Complete</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@
                     <td>@item.Id</td>
                     <td>@item.Name</td>
                     <td>@item.IsComplete</td>
+                    <td><a href="/edititems/@item.Id" class="btn btn-success">Edit</a></td>
                 </tr>
             }
         </tbody>

@@ -27,7 +27,7 @@ namespace MyFirstBlazorApp.Bases
 
         private protected async Task GetTodoItems()
         {
-            _todoItems = await TodoItemService.GetTodoItemList();
+            _todoItems = await TodoItemService.GetTodoItems();
         }
 
         #endregion

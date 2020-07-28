@@ -1,6 +1,10 @@
-﻿@page "/edititem"
-@inject Bases.EditBase
+﻿@page "/edititems/{id}"
+@inherits Bases.EditBase
 
 <h3>Edit</h3>
 
-<input class="form-control"/>
+<input @bind="_todoItemModel.Id" type="hidden">
+<input @bind="@_todoItemModel.Name" class="form-control"/>
+<input @bind="@_todoItemModel.IsComplete" type="checkbox" class="form-check" />
+<br />
+<button @onclick="EditItem">Save</button>
