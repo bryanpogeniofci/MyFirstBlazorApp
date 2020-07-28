@@ -1,0 +1,9 @@
+﻿@page "/createitem"
+@inherits Bases.CreateBase
+
+<h3>Create</h3>
+
+<input @bind="_itemName" class="form-control" placeholder="New Todo Item" />
+<br />
+<button @onclick="@AddItem" class="btn btn-primary">Add</button>
+

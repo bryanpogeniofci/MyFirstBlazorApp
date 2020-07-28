@@ -1,0 +1,26 @@
+﻿@page "/todoitems"
+@inherits Bases.ListBase
+
+<h3>To Do List</h3>
+
+<div class="card">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Complete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in _todoItems)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.IsComplete</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
