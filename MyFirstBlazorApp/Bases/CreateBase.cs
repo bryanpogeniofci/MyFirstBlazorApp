@@ -28,6 +28,7 @@ namespace MyFirstBlazorApp.Bases
             // added comment for rebase
             // added comment for 2nd rebase
             await TodoItemService.AddTodoItem(_itemName);
+            // my first edit in develop branch
         }
 
         #endregion
