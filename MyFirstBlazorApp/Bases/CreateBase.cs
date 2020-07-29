@@ -25,6 +25,7 @@ namespace MyFirstBlazorApp.Bases
 
         public async Task AddItem()
         {
+            // added comment for rebase
             await TodoItemService.AddTodoItem(_itemName);
         }
 
